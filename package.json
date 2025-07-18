@@ -1,0 +1,25 @@
+{
+  "name": "boltlab",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "mobile": "npm run start -w packages/mobile",
+    "mobile:ios": "npm run ios -w packages/mobile",
+    "mobile:android": "npm run android -w packages/mobile",
+    "test": "npm run test --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present"
+  },
+  "keywords": [
+    "fitness",
+    "workout",
+    "mobile",
+    "react-native",
+    "expo"
+  ],
+  "author": "BoltLab Team",
+  "license": "UNLICENSED",
+  "description": "BoltFit - Premium fitness tracking and gamification platform"
+}
